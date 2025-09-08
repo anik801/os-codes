@@ -46,3 +46,19 @@ else: print("Not found; key: " , key)
 key = 8
 if searchList(head, key): print("Found; Key: ", key)
 else: print("Not found; Key: " , key)
+
+
+# TODO: TASK - 1
+# Create method: addToLast(head, val)
+
+# TODO: TASK - 2
+# Create method: addToFirst(head, val)
+
+# TODO: TASK - 3
+# Create method: removeLast(head)
+
+# TODO: TASK - 4
+# Create method: removeFirst(head)
+
+# TODO: TASK - 5
+# Create method: countInList(head, key)

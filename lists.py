@@ -26,9 +26,18 @@ def searchList(head, key):
 
     return False
 
+def printList(head):
+    ptr = head
+    s = ""
+    while ptr:
+        s += str(ptr.val) + " "
+        ptr = ptr.next
+    print(s)
+
 # Execution
 arr = [3, 6, 8, 3, 1]
 head = generateListFromArr(arr)
+printList(head)
 
 key = 5
 if searchList(head, key): print("Found; Key: ", key)

@@ -50,7 +50,7 @@ else: print("Not found; Key: " , key)
 
 
 # TODO: TASK - 1
-# Create method: addToLast(head, val)
+# Create method: addToLast(tail, val)
 def addToLast(tail, val):
     node = ListNode(val)
     node.prev = tail
@@ -58,22 +58,12 @@ def addToLast(tail, val):
     tail = node
     return tail
 
-
 # TODO: TASK - 2
-# Create method: addToFirst(head, val)
-
-# TODO: TASK - 3
-# Create method: removeLast(head)
+# Create method: removeLast(tail)
 def removeLast(tail):
     tail = tail.prev
     tail.next = None
     return tail
-
-# TODO: TASK - 4
-# Create method: removeFirst(head)
-
-# TODO: TASK - 5
-# Create method: countInList(head, key)
 
 
 # Execution

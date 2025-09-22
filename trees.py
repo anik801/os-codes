@@ -28,8 +28,8 @@ def inOrder(root):
         inOrder(root.right)
     
 # Execution
-arr = [6, 4, 5, 3, 1, 12, 8, 9, 2, 14]
-# arr = [5, 2, 8]
+# arr = [6, 4, 5, 3, 1, 12, 8, 9, 2, 14]
+arr = [5, 2, 8]
 
 root = TreeNode(arr[0])
 for val in arr[1:]:

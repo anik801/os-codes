@@ -27,23 +27,6 @@ def inOrder(root):
         print(root.val)
         inOrder(root.right)
     
-# Execution
-# arr = [6, 4, 5, 3, 1, 12, 8, 9, 2, 14]
-arr = [5, 2, 8]
-
-root = TreeNode(arr[0])
-for val in arr[1:]:
-    insertNode(root, val)
-    
-inOrder(root)
-
-
-# def searchTree(root, key):
-#     # TODO: Write your code here
-#     # Return true if value is present in the Tree
-#     # Return false otherwise
-#     pass 
-
 def searchTree(root, key):
     if not root: return False
     if root.val == key: return True
@@ -52,6 +35,19 @@ def searchTree(root, key):
     findRight = searchTree(root.right, key)
     return findLeft or findRight
 
+
+# Execution
+# arr = [6, 4, 5, 3, 1, 12, 8, 9, 2, 14]
+arr = [5, 2, 8]
+
+# Create a tree from the given array
+root = TreeNode(arr[0])
+for val in arr[1:]:
+    insertNode(root, val)
+    
+inOrder(root)
+
+# Search operations
 print(searchTree(root, 17))
 print(searchTree(root, 5))
 print(searchTree(root, 2))

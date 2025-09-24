@@ -36,3 +36,22 @@ for val in arr[1:]:
     insertNode(root, val)
     
 inOrder(root)
+
+
+# def searchTree(root, key):
+#     # TODO: Write your code here
+#     # Return true if value is present in the Tree
+#     # Return false otherwise
+#     pass 
+
+def searchTree(root, key):
+    if not root: return False
+    if root.val == key: return True
+ 
+    findLeft = searchTree(root.left, key)
+    findRight = searchTree(root.right, key)
+    return findLeft or findRight
+
+print(searchTree(root, 17))
+print(searchTree(root, 5))
+print(searchTree(root, 2))
